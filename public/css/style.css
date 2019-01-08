@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+.label{
+    color: #069999;
+}
+#mainHome{
+    font-family: 'Playfair Display', serif;
+}
+
+#asideHome{
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+}
+#imgArticleHome{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+#articleHome{
+    padding: 4px;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: #069999 solid 2px;
+}
+
+#logoNav{
+    height: 30px;
+    width: 90px;
+}
+.btn-app{
+    background-color: #069999;
+    color: black;
+}
+.btn-app:hover{
+    background-color: #069999;
+    color: white;
+}
+
+.btn-sec-app{
+    background-color: #9fa3a3;
+    color: black !important;
+}
+.btn-sec-app:link{
+    color: black;
+}
+.btn-sec-app:hover{
+    background-color: #9fa3a3;
+    color: white !important;
+}
+.bg-app{
+    background-color: rgba(153, 214, 215, 0.5);
+}
+.btn-default-app{
+    border-radius: 5%;
+    border-color: black;
+    color: #069999 !important;
+}
+a:hover{
+    color: black !important;
+}
+
+a:link{
+    color: black !important;
+}
+a:visited{
+    color: #069999;
+}
+
+
