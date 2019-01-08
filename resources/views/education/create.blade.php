@@ -11,68 +11,74 @@
                     data-ttg-color="#069999"
                     data-ttg-fa="fa fa-book">Gastos de <b>Educación</b>
                 </h3>
-    
+                <hr>
                 <form action="{{Route('education.store')}}" method="POST">
                         @csrf
+                    <div class="row">
+                        <div class="col-md-1">
+                                <div class="my-fixed-item">
+                                        <p><b><h4>Gastos de Educación</h4></b></p>
+                                        <p>Escriba la cantidad que paga mensualmente en educación.</p>                                           
+                                </div>
+                        </div>
+                        <div class="col-md-11">
+                                <div class="container">
+                                        <div class="form-group">
+                                            <label for="college" class="label">Universidad</label>
+                                            <input type="number" name="college" placeholder="$ ----.--" step=".01" required
+                                            class="form-control tourtipguide"
+                                            data-ttg-title="Ingrese el monto mensual por pago de Universidad"
+                                            data-ttg-content="De lo contrario escriba 0"
+                                            data-ttg-color="#069999"
+                                            data-ttg-fa="fa fa-graduation-cap">                     
+                                        </div>
                     
-                    <div class="container">
-                        <div class="form-group">
-                            <label for="college" class="label">Universidad</label>
-                            <input type="number" name="college" placeholder="$ ----.--" step=".01" required
-                            class="form-control tourtipguide"
-                            data-ttg-title="Ingrese el monto mensual por pago de Universidad"
-                            data-ttg-content="De lo contrario escriba 0"
-                            data-ttg-color="#069999"
-                            data-ttg-fa="fa fa-graduation-cap">                     
+                                        <div class="form-group">
+                                            <label for="school" class="label">Colegio</label>
+                                            <input type="number" name="school" placeholder="$ ----.--" step=".01" required
+                                            class="form-control tourtipguide"
+                                            data-ttg-title="Ingrese el monto mensual por pago de colegiaturas"   
+                                            data-ttg-content="De lo contrario escriba 0"                        
+                                            data-ttg-color="#069999"
+                                            data-ttg-img="{{ asset('img/school.png') }}">                     
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <label for="enrollment" class="label">Matrículas</label>
+                                            <input type="number" name="enrollment" placeholder="$ ----.--" step=".01" required
+                                            class="form-control tourtipguide"
+                                            data-ttg-title="Ingrese el monto  por pago de matriculas"
+                                            data-ttg-content="De lo contrario escriba 0"
+                                            data-ttg-color="#069999"
+                                            data-ttg-fa="fa fa-money">                      
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <label for="books" class="label">Libros</label>
+                                            <input type="number" name="books" placeholder="$ ----.--" step=".01" required
+                                            class="form-control tourtipguide"
+                                            data-ttg-title="Ingrese el monto  por compra de Libros"
+                                            data-ttg-content="De lo contrario escriba 0"
+                                            data-ttg-color="#069999"
+                                            data-ttg-fa="fa fa-book">                      
+                                        </div>
+                
+                                    </div>
+                                    <div class="form-group">
+                                        <button
+                                        class="tourtipguide btn btn-default btn-app"
+                                        type="submit"
+                                        data-ttg-title="¡Listo! Click en el botón para hacer el registro de sus pagos por seguros"
+                                        data-ttg-fa="fa fa-mouse-pointer"
+                                        data-ttg-color="#069999"
+                                        >Registrar Gasto</button>
+                                    </div>
                         </div>
-    
-                        <div class="form-group">
-                            <label for="school" class="label">Colegio</label>
-                            <input type="number" name="school" placeholder="$ ----.--" step=".01" required
-                            class="form-control tourtipguide"
-                            data-ttg-title="Ingrese el monto mensual por pago de colegiaturas"   
-                            data-ttg-content="De lo contrario escriba 0"                        
-                            data-ttg-color="#069999"
-                            data-ttg-img="{{ asset('img/school.png') }}">                     
-                        </div>
-
-                        <div class="form-group">
-                            <label for="enrollment" class="label">Matrículas</label>
-                            <input type="number" name="enrollment" placeholder="$ ----.--" step=".01" required
-                            class="form-control tourtipguide"
-                            data-ttg-title="Ingrese el monto  por pago de matriculas"
-                            data-ttg-content="De lo contrario escriba 0"
-                            data-ttg-color="#069999"
-                            data-ttg-fa="fa fa-money">                      
-                        </div>
-
-                        <div class="form-group">
-                            <label for="books" class="label">Libros</label>
-                            <input type="number" name="books" placeholder="$ ----.--" step=".01" required
-                            class="form-control tourtipguide"
-                            data-ttg-title="Ingrese el monto  por compra de Libros"
-                            data-ttg-content="De lo contrario escriba 0"
-                            data-ttg-color="#069999"
-                            data-ttg-fa="fa fa-book">                      
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <button
-                        class="tourtipguide btn btn-default btn-app"
-                        type="submit"
-                        data-ttg-title="¡Listo! Click en el botón para hacer el registro de sus pagos por seguros"
-                        data-ttg-fa="fa fa-mouse-pointer"
-                        data-ttg-color="#069999"
-                        >Registrar Gasto</button>
-                    </div>
+                    </div> 
                 </form>
-    
             </div>
-    
         </div>
     </div>
-    
     <script>
             $(document).ready(function($) {
     

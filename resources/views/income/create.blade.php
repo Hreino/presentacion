@@ -14,7 +14,13 @@
                 </ul>
             </div>
             @endif
-
+            <div class="container col-md-10 text-center">
+                <h3
+                    class="label tourtipguide"
+                    data-ttg-title="Procederemos a registrar los Ingresos Familiares"
+                    data-ttg-color="#069999"
+                    data-ttg-fa="fa fa-home">Ingresos <b>Familiares</b></h3>
+                   <hr>
         {{-- Modal --}}
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -49,7 +55,18 @@
         {{-- Modal --}}
 
             <form>
-
+                   <div class="row">
+                     <div class="col-md 1">
+                        <div id="column_left">
+                            <div class="my-fixed-item">
+                                 <p><b><h4>Ingresos Familiares</h4></b></p>
+                                 <p>Anote la cantidad de dinero que trae 
+                                   al hogar mesualmente.
+                                </p>                                           
+                            </div>
+                        </div> 
+                     </div>
+                   </div>
                     <div class="form-group">
                         <label for="husbandIncome" class="label">Ingresos Esposo</label>
                         <input  step=".01" required

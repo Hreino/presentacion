@@ -23,8 +23,8 @@
 }
 
 #logoNav{
-    height: 30px;
-    width: 90px;
+    height:60px;
+    width: 150px;
 }
 .btn-app{
     background-color: #069999;
@@ -65,4 +65,7 @@ a:visited{
     color: #069999;
 }
 
+.card-app{
+   height: 250px;
 
+}
