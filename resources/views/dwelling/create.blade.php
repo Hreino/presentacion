@@ -4,7 +4,7 @@
     
     <div class="container">
         <div class="row justify-content-center">
-            <div class="container col-md-5 text-center">
+            <div class="container col-md-5 col-md-offset-2 text-center">
                 <h3
                 class="label tourtipguide"
                 data-ttg-title="Procederemos a ingresar los gastos de vivienda"
@@ -25,7 +25,7 @@
                                 </div>
                         </div> 
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-md-10 ">
                             <div class="container">
                                 <div class="form-group">
                                     <label for="rent" class="label">Renta</label>
